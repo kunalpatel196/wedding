@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wending</title>
+    <link rel="icon" href="rings.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        *::selection {
+            background-color: rgba(255, 0, 0, 0.788);
+            color: white;
+        }
+
+        body {
+            background-color: rgba(251, 246, 249, 0.419);
+        }
+
+        #nav-1 {
+            width: 47%;
+            background: transparent;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 35px;
+            float: left;
+        }
+
+        #nav-2 {
+            width: 44%;
+            background: transparent;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-family: 'Lemonada', cursive;
+            float: left;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        #nav-2 h4 {
+            margin-left: 10px;
+            font-weight: 500em;
+            font-size: 20px;
+        }
+
+        #background {
+            background-image: url('weeding-bg.jpg');
+            width: 100%;
+            height: 950px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+            background-attachment: fixed;
+        }
+
+        #backoverlay {
+
+
+            color: white;
+            background: transparent;
+            text-align: center;
+        }
+
+        #backoverlay img {
+            align-items: center;
+            margin-top: 17%;
+            margin-left: ;
+
+        }
+
+        #backoverlay h3 {
+
+            margin-top: 25px;
+            font-size: 30px;
+        }
+
+        #backoverlay h1 {
+            width: 25%;
+            height: 100px;
+            font-size: 140px;
+            line-height: 140px;
+            margin: 17px 290px 0px;
+        }
+
+        #backoverlay h2 {
+            height: 200px;
+            font-size: 40px;
+            line-height: 140px;
+            margin: 17px 380px 0;
+        }
+
+        #text {
+            width: 100%;
+            height: 1050px;
+            background-color: rgba(214, 204, 204, 0.63);
+            margin-top: 10px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        #text-nav {
+            width: 80%;
+            height: 500px;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 20px;
+        }
+
+        #text-img {
+            width: 50%;
+            height: 400px;
+            margin-left: -80px;
+            float: left;
+        }
+
+        #text-text {
+            width: 50%;
+            margin-left: 50%;
+            height: 400px;
+            margin-top: 15%;
+        }
+
+        #text-text h1 {
+            font-size: 40px;
+
+        }
+
+        #text-text p {
+            font-size: 25px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        #text-button {
+            border: 5px solid red;
+            padding-top: 18px;
+            padding-right: 50px;
+            padding-bottom: 18px;
+            padding-left: 50px;
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+
+        #text-button:hover {
+            background-color: rgba(255, 0, 0, 0.493);
+            color: white;
+        }
+
+        #text-bottom {
+            width: 100%;
+            height: 300px;
+            margin-top: 20%;
+            border-top: 1px solid rgba(0, 0, 0, 0.445);
+        }
+
+        #bottom-1 {
+            width: 33%;
+            height: 180px;
+            margin-top: 20px;
+            padding-right: 10px;
+            font-family: 'Lemonada', cursive;
+            float: left;
+        }
+
+        #bottom-2 {
+            width: 33%;
+            height: 180px;
+            margin-top: 20px;
+            padding-right: 10px;
+            font-family: 'Lemonada', cursive;
+            float: right;
+            margin-left: 32px;
+        }
+
+        #bottom-3 {
+            width: 32%;
+            height: 180px;
+            margin-top: 20px;
+            padding-right: 10px;
+            font-family: 'Lemonada', cursive;
+            float: right;
+            margin-right: -53px;
+        }
+
+        #banner {
+            width: 100%;
+            height: 800px;
+            background-image: url('hero.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: top center;
+            color: white;
+            font-family: 'Bungee Spice', sans-serif;
+            background-attachment: fixed;
+
+        }
+
+        #banner-1 {
+            width: 40%;
+            height: 800px;
+            background: transparent;
+            margin-left: 10%;
+            margin-right: 60%;
+            padding-top: 15%;
+        }
+
+        #mid {
+            width: 100%;
+            height: 500px;
+            margin-top: 20px;
+        }
+
+        #mid-0 {
+            width: 80%;
+            height: 500px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        #mid-1 {
+            width: 50%;
+            height: 500px;
+            margin-left: 20px;
+            margin-top: 10%;
+            float: left;
+        }
+
+        #mid-10 {
+            width: 48%;
+            height: 500px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        #mid-11 {
+            width: 29%;
+            height: 500px;
+            float: right;
+        }
+
+        #mid-2 {
+            width: 30%;
+            height: 500px;
+            font-family: 'Lemonada', cursive;
+            float: right;
+            margin-top: 20%;
+        }
+
+        #mid-2 h1 {
+            font-size: 40px;
+        }
+
+        #mid-2 h4 {
+            font-size: 20px;
+        }
+
+        #last {
+            width: 100%;
+            height: 800px;
+            background-image: url('pic16.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+            margin-top: 30%;
+            color: white;
+        }
+
+        #last-1 {
+            width: 80%;
+            height: 500px;
+            margin-right: 10%;
+            align-content: center;
+        }
+
+        #last-1 img {
+            align-items: center;
+            margin-top: 17%;
+            margin-left: 554px;
+        }
+
+        #last-1 h5 {
+            margin-left: 510px;
+            margin-top: 25px;
+            font-size: 30px;
+        }
+
+        #last-1 h1 {
+            width: 25%;
+            height: 100px;
+            font-size: 140px;
+            line-height: 140px;
+            margin: 17px 290px 0px;
+        }
+
+        #last-1 button {
+            margin-left: 450px;
+        }
+
+        #last-1 h3 {
+            margin-left: 442px;
+            margin-top: 33px;
+            font-size: 30px;
+            color: rgba(255, 0, 0, 0.829);
+        }
+
+        #col {
+            width: 100%;
+            height: 500px;
+            background-color: rgba(109, 106, 106, 0.24);
+        }
+
+        #col-1 {
+            width: 80%;
+            height: 400px;
+            margin-top: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 100px;
+            align-items: center;
+        }
+
+        #col-1 img {
+            align-items: center;
+            margin-left: 450px;
+        }
+
+        #col-1 h2 {
+            align-items: center;
+            margin-left: 225px;
+            margin-right: 185px;
+            color: rgb(45, 45, 46);
+            margin-top: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #col-1 p {
+            margin-left: 475px;
+            margin-top: 25px;
+            color: red;
+            font-family: 'Lemonada', cursive;
+        }
+
+        #gallery {
+            width: 100%;
+            height: 1000px;
+            background-color: rgb(230, 227, 227);
+        }
+
+        #gallery-1 {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 20px;
+            padding-top: 100px;
+            font-size: 30px;
+            height: 1000px;
+        }
+
+        #tr-1 {
+            width: 100%;
+            height: 250px;
+            padding-top: 30px;
+        }
+
+        #form {
+            width: 100%;
+            height: 719px;
+            margin-top: 20px;
+            font-family: 'Lemonada', cursive;
+        }
+
+        #form-text {
+            width: 50%;
+            background-color: rgba(255, 0, 0, 0.678);
+            height: 700px;
+            margin-top: 20px;
+            float: left;
+        }
+
+        #form-text-1 {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 25%;
+            background: transparent;
+            color: white;
+        }
+
+        #form-text-1 tr {
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        #form-1 {
+            width: 50%;
+            height: 700px;
+            margin-top: 20px;
+            float: right;
+        }
+
+        #form-1-form {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 20px;
+
+        }
+
+        #form-1-form input,
+        textarea {
+            width: 80%;
+            height: 50px;
+            margin-left: 10%;
+            margin-right: 10%;
+            border: 1px solid rgb(100, 98, 98);
+            margin-bottom: 20px;
+            border-radius: 15px;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+
+        #form-1-form button {
+            width: 60%;
+            height: 50px;
+            margin-left: 20%;
+            margin-right: 20%;
+            border: 3px solid rgb(247, 11, 11);
+            border-radius: 15px;
+            padding-left: 10px;
+
+        }
+
+        #form-1-form button:hover {
+            background-color: red;
+            color: white;
+        }
+
+        #and-bar {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(17, 17, 70);
+            font-family: 'Lemonada', cursive;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav id="nav-1">
+            <img src="logo-search-grid-1x.png" height="150px" width="150px">
+        </nav>
+        <nav id="nav-2">
+            <h4><a href="wending.html">HOME</a></h4>
+            <h4><a href="service.html">SERVICE</a></h4>
+            <h4><a href="gallery.html">GALLERY</a></h4>
+            <h4><a href="vennue.html">VENUES</a></h4>
+            <h4><a href="aboutwedding.html">ABOUT</a></h4>
+            <h4><a href="contact.html">CONTACT</a></h4>
+        </nav>
+    </div>
+    <div id="background">
+        <div id="backoverlay">
+            <img src="pic10-free-img.png">
+            <h3>Country's Best Luxury</h3>
+            <h1>WEDDING</h1>
+            <h2>Planners & Event Organizers!</h2>
+        </div>
+
+    </div>
+    <div id="text">
+        <div id="text-nav">
+            <div id="text-img">
+                <img src="pic12-free-img.png" height="700px" width="100%">
+            </div>
+            <div id="text-text">
+                <p>Your Exclusive</p>
+                <h1>WEDDING</h1>
+                <h1>PLANNERS</h1>
+                <p>Dui quam molestie sem do accusamus, mollitia ullamco asperiores conubia, suscipit incidunt, lorem
+                    lectus.
+                    Tellus molestias dui tristique blandit expedita lorem! Dolorum congue hac, quisque. Tellus molestias
+                    dui tristiqu.Curabitur incididunt, accusantium parturient excepturi natoque. Rerum repudian.Quidem
+                    atque aliquid voluptatum eiusmod molestias, expedita erat autem dolores,
+                    consequatur sapiente! Quidem atque aliquid voluptatum eiusmod molestias.</p>
+                <button type="button" ID="text-button">READ MORE</button>
+            </div>
+            <div id="text-bottom">
+                <div id="bottom-1">
+                    <div style="float: left; width: 15%; height: 300px; margin-right: 25px ">
+                        <img src="icon-1.png">
+                    </div>
+                    <div>
+                        <h3>Occaecat Lacus</h3>
+                        <p>Curabitur incididunt, accusantium parturient excepturi natoque. Rerum repudian.</p>
+                    </div>
+                </div>
+                <div id="bottom-2">
+                    <div style="float: left; width: 15%; height: 300px; margin-right: 25px">
+                        <img src="icon-2.png">
+                    </div>
+                    <div>
+                        <h3>Aliquam Maxime</h3>
+                        <p>Curabitur incididunt, accusantium parturient excepturi natoque. Rerum repudian.</p>
+                    </div>
+                </div>
+                <div id="bottom-3">
+                    <div style="float: left; width: 15%; height: 300px; margin-right: 25px">
+                        <img src="icon-3.png">
+                    </div>
+                    <div>
+                        <h3>Quos Felis</h3>
+                        <p>Curabitur incididunt, accusantium parturient excepturi natoque. Rerum repudian.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="banner">
+        <div id="banner-1">
+            <h4 style="font-size: 25px; margin-bottom: 20px;">We Plan Wedding's That Are</h4>
+            <h1 style="font-size: 50px; margin-bottom: 20px;">GRAND</h1>
+            <p style="font-size: 16px; margin-bottom: 30px;">Et earum ligula dolor, consectetur, adipiscing ducimus
+                bibendum deleniti, dolorum
+                incididunt voluptatibus ratione pulvinar ipsam blanditiis, aspernatur aptent, sagittis nibh.</p>
+            <h3 style="font-size: 35px; margin-top: 20px; margin-bottom: 20px; color: rgba(255, 0, 0, 0.651);">Follow Us
+            </h3>
+            <p style="font-size: 15px; margin-bottom: 30px;">Eiusmod doloremque sapien beata ctumst laboris feli.</p>
+            <tr style="display: flex; margin-top: 30px; padding-left: 20px;">
+                <td>
+                    <img src="facebook.png" height="50px" width="50px" style="margin-left: 10px;">
+                </td>
+                <td>
+                    <img src="twitter.png" height="50px" width="50px" style="margin-left: 20px;">
+                </td>
+                <td>
+                    <img src="instagram.png" height="50px" width="50px" style="margin-left: 20px;">
+                </td>
+                <td>
+                    <img src="pinterest.png" height="50px" width="50px" style="margin-left: 20px;">
+                </td>
+            </tr>
+        </div>
+    </div>
+    <div id="mid">
+        <div id="mid-0">
+            <div id="mid-1">
+                <div id="mid-10">
+                    <img src="pic14-free-img.jpg" height="600px">
+                </div>
+                <div id="mid-11">
+                    <img src="pic04-free-img.jpg">
+                    <img src="pic02-free-img.jpg" height="325px" width="270px">
+                </div>
+            </div>
+            <div id="mid-2">
+                <h4>Select Your Outstanding</h4>
+                <h1>WEDDING </h1>
+                <h1>DESTINATION!</h1>
+                <p>Quidem atque aliquid voluptatum eiusmod molestias, expedita erat autem dolores,
+                    consequatur sapiente! Quidem atque aliquid voluptatum eiusmod molestias.</p>
+                <button type="button" ID="text-button">SEE ALL VENUES</button>
+            </div>
+        </div>
+    </div>
+    <div id="last">
+        <div id="last-1">
+            <img src="pic10-free-img.png">
+            <h5>Country's Best Luxury</h5>
+            <h1>SERVICES</h1>
+            <h3>Looking For A Wedding Planner?</h3>
+            <button type="button" ID="text-button">BOOK MY WEDDING DATES</button>
+        </div>
+
+    </div>
+    <div id="col">
+        <div id="col-1">
+            <img src="pic551-free-img.png">
+            <h2>"Nisi voluptatibus molestiae tincidunt magna curae magni recusandae
+                commodo potenti dolorem ridiculus! Iusto facilisi, repudian."</h2>
+            <p>Joey & Phoebe</p>
+        </div>
+    </div>
+    <div id="gallery">
+        <div id="gallery-1">
+            <h3>Ratione Molestiae Exercit</h3>
+            <h1>OUR GALLERY</h1>
+            <tr id="tr-1">
+                <td>
+                    <img src="pic60-free-img-2.jpg" height="350px" width="350px">
+                </td>
+                <td>
+                    <img src="pic02-free-img.jpg" height="350px" width="350px">
+                </td>
+                <td>
+                    <img src="pic61-free-img.jpg" height="350px" width="350px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="pic64-free-img.jpg" height="350px" width="350px">
+                </td>
+                <td>
+                    <img src="pic62-free-img.jpg" height="350px" width="350px">
+                </td>
+                <td>
+                    <img src="pic63-free-img.jpg" height="350px" width="350px">
+                </td>
+            </tr>
+        </div>
+    </div>
+    <div id="form">
+        <div id="form-text">
+            <div id="form-text-1">
+                <img src="fancy-border-img.png" style="margin-left: 150px; margin-bottom: 10px;">
+                <p style="margin-left: 80px; margin-bottom: 10px; font-size: 20px;">We Plan Wedding’s That Are</p>
+                <h1 style="margin-left: 130px; margin-bottom: 10px; font-size: 50px;">GRAND</h1>
+                <p style=" margin-bottom: 10px; margin-top: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                    Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <tr>
+                    <td>
+                        <img src="instagram.png" width="50px" height="50px"
+                            style="margin-left: 120px; margin-top: 30px; margin-right: 10px;">
+                    </td>
+                    <td>
+                        <img src="facebook.png" width="50px" height="50px" style=" margin-right: 10px;">
+                    </td>
+                    <td>
+                        <img src="pinterest.png" width="50px" height="50px" style=" margin-right: 10px;">
+                    </td>
+                    <td>
+                        <img src="youtube.png" width="50px" height="50px" style=" margin-right: 10px;">
+                    </td>
+                </tr>
+            </div>
+        </div>
+        <div id="form-1">
+            <div id="form-1-form">
+                <h1 align="center">SEND US A</h1>
+                <h1 align="center">MESSAGE</h1>
+                <p align="center">Deleniti sunt elementum rhoncus nostrud eveniet, ac deleniti magna veniam.</p>
+                <input type="text" id="name" placeholder="you name">
+                <input type="email" id="email" placeholder="you email">
+                <input type="text" id="sunject" placeholder="sunject">
+                <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">message
+                    </textarea>
+                <button type="button" ID="button">BOOK AN APPOINTEMENT</button>
+            </div>
+        </div>
+    </div>
+    <div id="and-bar">
+        <TR width="100%">
+            <TD>Copyright © 2023 Wedding Planner</TD>
+            <TD>Powered by KUNAL GURJAR</TD>
+        </TR>
+
+
+    </div>
+</body>
+
+</html>

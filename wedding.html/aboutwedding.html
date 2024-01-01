@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="icon" href="rings.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+        }
+
+        *::selection {
+            background-color: rgba(255, 0, 0, 0.788);
+            color: white;
+        }
+
+        body {
+            background-color: rgba(251, 246, 249, 0.419);
+        }
+
+        #nav-1 {
+            width: 44%;
+            background: transparent;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 35px;
+            float: left;
+        }
+
+        #nav-2 {
+            width: 44%;
+            background: transparent;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-family: 'Lemonada', cursive;
+            float: left;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        #nav-2 h4 {
+            margin-left: 10px;
+            font-weight: 500em;
+        }
+
+
+        #background {
+            background-image: url('about-bg.jpg');
+            width: 100%;
+            height: 900px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+            background-attachment: fixed;
+        }
+
+        #backoverlay {
+            height: 900px;
+
+            width: 100%;
+            top: 0;
+            left: 0;
+
+            color: white;
+
+            clear: both;
+            text-align: center;
+        }
+
+        .col-6 {
+            position: relative;
+            align-items: center;
+            margin-top: 12%;
+            padding-bottom: 100px;
+        }
+
+        .col-6 img {
+            align-items: center;
+            margin-top: 17%;
+        }
+
+        .col-6 h3 {
+            margin-left: 66px;
+            margin-top: 25px;
+            font-size: 35px;
+        }
+
+        .col-6 h1 {
+            font-size: 140px;
+            margin: 14px 80px 0px;
+        }
+
+        .col-6 h2 {
+            font-size: 41px;
+            margin: 17px 30px 0;
+        }
+
+        #conta {
+            background-color: #f6f6f6;
+            padding-top: 10%;
+            margin-bottom: 180px;
+        }
+
+        #row {
+            width: 50%;
+        }
+
+        .row p {
+            font-size: 25px;
+        }
+
+        #conta-1 {
+            padding-top: 25px;
+        }
+
+        .col-4 img {
+            align-items: center;
+            margin-left: 80px;
+        }
+
+        .col-4 p {
+            margin-left: 30px;
+        }
+
+        #con {
+            background-color: #070a00;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .co {
+            margin-top: 10%;
+        }
+
+        .ro {
+            margin-top: 100px;
+        }
+
+        #form {
+            width: 100%;
+            height: 719px;
+            margin-top: 10%;
+            font-family: 'Lemonada', cursive;
+        }
+
+        #form-text {
+            width: 50%;
+            background-color: rgba(255, 0, 0, 0.678);
+            height: 700px;
+            margin-top: 20px;
+            float: left;
+        }
+
+        #form-text-1 {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 25%;
+            background: transparent;
+            color: white;
+        }
+
+        #form-text-1 tr {
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        #form-1 {
+            width: 50%;
+            height: 700px;
+            margin-top: 20px;
+            float: right;
+        }
+
+        #form-1-form {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 20px;
+
+        }
+
+        #form-1-form input,
+        textarea {
+            width: 80%;
+            height: 50px;
+            margin-left: 10%;
+            margin-right: 10%;
+            border: 1px solid rgb(100, 98, 98);
+            margin-bottom: 20px;
+            border-radius: 15px;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+
+        #form-1-form button {
+            width: 60%;
+            height: 50px;
+            margin-left: 20%;
+            margin-right: 20%;
+            border: 3px solid rgb(247, 11, 11);
+            border-radius: 15px;
+            padding-left: 10px;
+
+        }
+
+        #form-1-form button:hover {
+            background-color: red;
+            color: white;
+        }
+
+        #and-bar {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(17, 17, 70);
+            font-family: 'Lemonada', cursive;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="nav-1">
+            <img src="logo-search-grid-1x.png" height="150px" width="150px">
+        </nav>
+        <nav id="nav-2">
+            <h4><a href="wending.html">HOME</a></h4>
+            <h4><a href="service.html">SERVICE</a></h4>
+            <h4><a href="gallery.html">GALLERY</a></h4>
+            <h4><a href="vennue.html">VENUES</a></h4>
+            <h4><a href="aboutwedding.html">ABOUT</a></h4>
+            <h4><a href="contact.html">CONTACT</a></h4>
+        </nav>
+    </div>
+    <div class="container-fulid">
+        <div id="background">
+            <div id="backoverlay" class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <img src="pic10-free-img.png">
+                    <h3>Facilisis Fugit Blanditiis Corrupti</h3>
+                    <h1>ABOUT</h1>
+                    <h2>Start Planning Your Wedding</h2>
+                </div>
+                <div class="col-3"></div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container" id="conta">
+        <div class="row mx-auto" id="row">
+            <p align="center">Looking for Perfection?</p>
+            <h1 align="center">WE ARE HERE TO</h1>
+            <h1 align="center">HELP YOU!</h1>
+            <p>Dui quam molestie sem do accusamus, mollitia ullamco asperiores conubia, suscipit incidunt, lorem lectus.
+                Tellus molestias
+                dui tristique blandit expedita lorem! Dolorum congue hac, quisque. Tellus molestias dui tristiqu.</p>
+        </div>
+        <div class="container" id="conta-1">
+            <div class="row mx-auto">
+                <div class="col-4" style="padding-left: 90px;">
+                    <img src="icon-4.png" align="center" />
+                    <h3>Collaborate With Us</h3>
+                    <p>Sodales provident</p>
+                </div>
+                <div class="col-4" style="padding-left: 90px;">
+                    <img src="icon-5.png" align="center" />
+                    <h3>Select Destination</h3>
+                    <p>Sodales provident</p>
+                </div>
+                <div class="col-4" style="padding-left: 90px;">
+                    <img src="icon-6.png" align="center" />
+                    <h3>Start Planning</h3>
+                    <p style="margin-left:-5px;">Sodales provident</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fulid" id="con">
+        <div class="container">
+            <div class="row" style="margin-left: 20px;">
+                <div class="col-6">
+                    <img src="pic31-free-img.png" />
+                    <table width="50%" height="100px" style="margin-left: 250px; margin-top:70px;">
+                        <tr>
+                            <td align="center">
+                                <h2 class="count">150</h2>
+                            </td>
+                            <td align="center">
+                                <h2 class="count">80</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <h5 style="color:red;">Placeat Euismod</h5>
+                            </td>
+                            <td align="center">
+                                <h5 style="color:red;">Honeymoon Places</h5>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-6">
+                    <table width="50%" height="100px" style="margin-left: 200px; margin-top:70px;">
+                        <tr>
+                            <td align="center">
+                                <h2 class="count">90</h2>
+                            </td>
+                            <td align="center">
+                                <h2 class="count">450</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <h5 style="color:red;">Events Nailed</h5>
+                            </td>
+                            <td align="center">
+                                <h5 style="color:red;">Exclusive Destinations</h5>
+                            </td>
+                        </tr>
+                    </table>
+                    <img src="pic32-free-img.png" />
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container co">
+        <div class="col-md-6">
+            <p style="font-size:20px;">Meet Our</p>
+            <h1 style="font-size:70px ; font-weight:45em;">PLANNERS</h1>
+            <p style="font-size:20px;">Doloribus, eiusmod amet nostrud dolore, dicta tincidunt malesuada euismod urna.
+                Placeat veniam ipsam velit, venenatis. Iste! Gravida modi
+                expedita rerum officiis aut placeat. Placeat veniam ipsam velit, venenatis. Iste! Gravida modi expedita.
+            </p>
+        </div>
+        <div class="row ro">
+            <div class="col-3">
+                <img src="team-1.jpg" width="270px" height="530px"/>
+                <h3 align="center">Julia Boyd</h3>
+                <p align="center">Business Head</p>
+                <table style="margin-left: 70px;">
+                    <tr>
+                        <td>
+                            <img src="pinterest.png" height="30px" width="30px" />
+                        </td>
+                        <td style="margin-left: 10px;">
+                            <img src="twitter.png" height="30px" width="30px" />
+                        </td>
+                        <td style="margin-left: 10px;">
+                            <img src="facebook.png" height="30px" width="30px" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-3">
+                <img src="team-2.jpg" width="270px"  height="530px"/>
+                <h3 align="center">Jane Turner</h3>
+                <p align="center">Business Head</p>
+                <table style="margin-left: 70px;">
+                    <tr>
+                        <td>
+                            <img src="pinterest.png" height="30px" width="30px" />
+                        </td>
+                        <td style="margin-left: 10px;">
+                            <img src="twitter.png" height="30px" width="30px" />
+                        </td>
+                        <td style="margin-left: 10px;">
+                            <img src="facebook.png" height="30px" width="30px" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-3">
+                <img src="team-3.jpg" width="270px" height="530px" />
+                <h3 align="center">Mike Stuwart</h3>
+                <p align="center">Co Founder</p>
+                <table style="margin-left: 70px;">
+                    <tr>
+                        <td>
+                            <img src="pinterest.png" height="30px" width="30px" />
+                        </td>
+                        <td style="margin-left: 10px;">
+                            <img src="twitter.png" height="30px" width="30px" />
+                        </td>
+                        <td style="margin-left: 10px;">
+                            <img src="facebook.png" height="30px" width="30px" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-3">
+                <img src="team-4.jpg" width="270px" />
+                <h3 align="center">Bani Matt</h3>
+                <p align="center">Planner & Coordinator</p>
+                <table style="margin-left: 70px;">
+                    <tr>
+                        <td>
+                            <img src="pinterest.png" height="30px" width="30px" />
+                        </td>
+                        <td style="margin-left: 10px;">
+                            <img src="twitter.png" height="30px" width="30px" />
+                        </td>
+                        <td style="margin-left: 10px;">
+                            <img src="facebook.png" height="30px" width="30px" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="form">
+        <div id="form-text">
+            <div id="form-text-1">
+                <img src="fancy-border-img.png" style="margin-left: 150px; margin-bottom: 10px;">
+                <p style="margin-left: 80px; margin-bottom: 10px; font-size: 20px;">We Plan Wedding’s That Are</p>
+                <h1 style="margin-left: 130px; margin-bottom: 10px; font-size: 50px;">GRAND</h1>
+                <p style=" margin-bottom: 10px; margin-top: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                    Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <tr>
+                    <td>
+                        <img src="instagram.png" width="50px" height="50px"
+                            style="margin-left: 120px;  margin-right: 10px;">
+                    </td>
+                    <td>
+                        <img src="facebook.png" width="50px" height="50px" style=" margin-right: 10px;">
+                    </td>
+                    <td>
+                        <img src="pinterest.png" width="50px" height="50px" style=" margin-right: 10px;">
+                    </td>
+                    <td>
+                        <img src="youtube.png" width="50px" height="50px" style=" margin-right: 10px;">
+                    </td>
+                </tr>
+            </div>
+        </div>
+        <div id="form-1">
+            <div id="form-1-form">
+                <h1 align="center">SEND US A</h1>
+                <h1 align="center">MESSAGE</h1>
+                <p align="center">Deleniti sunt elementum rhoncus nostrud eveniet, ac deleniti magna veniam.</p>
+                <input type="text" id="name" placeholder="you name">
+                <input type="email" id="email" placeholder="you email">
+                <input type="text" id="sunject" placeholder="sunject">
+                <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">message
+                    </textarea>
+                <button type="button" ID="button">BOOK AN APPOINTEMENT</button>
+            </div>
+        </div>
+    </div>
+    <div id="and-bar">
+        <TR width="100%">
+            <TD>Copyright © 2023 Wedding Planner</TD>
+            <TD>Powered by KUNAL GURJAR</TD>
+        </TR>
+
+
+    </div>
+</body>
+<script>
+    /*const target = parseInt(counter.getAttribute('count'))
+let count = parseInt(counter.innerText)
+const inc = target / speed
+
+function upDate() {
+    if (count < target) {
+        count = Math.floor(inc + count)
+        counter.innerText = count
+        setTimeout(upDate, 15)
+    } else {
+        counter.innerText = target
+    }
+}*/
+
+</script>
+
+</html>
